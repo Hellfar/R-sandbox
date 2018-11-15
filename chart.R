@@ -13,9 +13,9 @@ parser <- add_option(parser, c("-v", "--verbose"), action="store_true",
 parser <- add_option(parser, c("--o_pdf"),
                 default=FALSE, help="Output in pdf instead")
 parser <- add_option(parser, c("-f", "--ifile"),
-                default="stdin", help="File to plot (p -> points, l -> lines, o -> overplotted points and lines, b-c -> points (empty if \"c\") joined by lines), s-S -> stair steps, h -> histogram-like vertical lines, n -> does not produce any points or lines")
+                default="stdin", help="File to plot")
 parser <- add_option(parser, c("-t", "--type"),
-                default="l", help="Type of plot")
+                default="l", help="Type of plot (p -> points, l -> lines, o -> overplotted points and lines, b-c -> points (empty if \"c\") joined by lines), s-S -> stair steps, h -> histogram-like vertical lines, n -> does not produce any points or lines")
 parser <- add_option(parser, c("--xlab"),
                 default="x", help="Define label for absciss")
 parser <- add_option(parser, c("--ylab"),

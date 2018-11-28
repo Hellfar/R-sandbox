@@ -1,8 +1,16 @@
+Datasets:
 https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html
-
 mtcars
 cars
 PlantGrowth
 warpbreaks
 Orange
 volcano
+
+Palettes:
+https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/colorPaletteCheatsheet.pdf
+cm.colors
+topo.colors
+terrain.colors
+heat.colors
+rainbow

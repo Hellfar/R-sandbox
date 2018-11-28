@@ -45,7 +45,7 @@ y <- scan(file=options$ifile, quiet=TRUE)
 if (options$verbose) {
   write(paste("Length: ", length(y)), stdout())
   write("Array:", stdout())
-  write(str(y), stdout())
+  write(y, stdout())
 }
 
 if (length(y) > 0)

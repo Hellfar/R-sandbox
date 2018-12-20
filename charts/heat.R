@@ -44,19 +44,19 @@ if (options$driver == "x11") {
 if (options$verbose)
   write(str(options), stdout())
 
-y <- read.table(file=options$ifile)
-y <- structure(unlist(y, use.names = FALSE), .Dim = c(nrow(y), ncol(y)))
+numbers <- read.table(file=options$ifile)
+numbers <- structure(unlist(numbers, use.names = FALSE), .Dim = c(nrow(numbers), ncol(numbers)))
 
-# y <- scan(file=options$ifile, quiet=TRUE)
+# numbers <- scan(file=options$ifile, quiet=TRUE)
 if (options$verbose) {
-  write(paste("Length: ", length(y)), stdout())
+  write(paste("Length: ", length(numbers)), stdout())
   write("Array:", stdout())
-  # write(y, stdout())
-  dput(y)
+  # write(numbers, stdout())
+  dput(numbers)
 }
 
-if (length(y) > 0)
-  filled.contour(y, color.palette = rainbow)
+if (length(numbers) > 0)
+  filled.contour(numbers, color.palette = rainbow)
 
 if (options$driver == "x11") {
   while (!is.null(dev.list())) Sys.sleep(1)

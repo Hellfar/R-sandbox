@@ -38,7 +38,7 @@ if (options$driver == "x11") {
   # if (options$verbose)
   #   write(str(get(options$driver)), stdout())
   # dev.copy(match.fun(options$driver), options$ofile)
-  match.fun(options$driver)(options$ofile)
+  match.fun(options$driver)(paste(options$ofile, options$driver, sep="."))
 }
 
 if (options$verbose)
